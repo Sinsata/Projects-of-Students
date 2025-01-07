@@ -1,54 +1,132 @@
 <!DOCTYPE html>
 <html lang="uz">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Interaktiv Ta'lim Platformasi</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interaktiv Ta'lim Platformasi</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <style>
+    body {
+      background: #042A2B;
+      color: white;
+    }
+
+    header,
+    footer {
+      color: #042A2B;
+    }
+
+    a, h4 {
+      color: #555;
+      font-weight: 700;
+      transition: .2s;
+    }
+
+    a:hover {
+      color: #000;
+    }
+
+    .project-list {
+      gap: 1rem;
+    }
+
+    .project-item {
+      width: 300px;
+      border-radius: 5px;
+      box-shadow: 2px 2px 5px #0005;
+      overflow: hidden;
+      transition: .3s;
+    }
+    .project-item:hover {
+      box-shadow: 2px 2px 15px #000;
+    }
+
+    .project-item img {
+      width: 100%;
+      height: 150px;
+      filter: drop-shadow(-2px -2px 5px #0005);
+      object-fit: cover;
+    }
+
+    .project-item p, .project-item h4 {
+      padding: 2px 10px;
+      font-size: 1rem;
+    }
+  </style>
 </head>
+
 <body>
-    <!-- Header -->
-    <header style="text-align: center; padding: 20px; background-color: #f4f4f4;">
-        <h1>Interaktiv Ta'lim Platformasi</h1>
-        <p>Web dasturlash darslarini o'rganing va amalda qo'llang!</p>
-    </header>
+  <!-- Header -->
+  <header style="text-align: center; padding: 20px; background-color: #f4f4f4;">
+    <h1>Interaktiv Ta'lim Platformasi</h1>
+    <p>Web dasturlash darslarini o'rganing va amalda qo'llang!</p>
+  </header>
 
-    <!-- Asosiy mazmun -->
-    <main style="padding: 20px;">
-        <!-- Men haqimda -->
-        <section id="about">
-            <h2>Men haqimda</h2>
-            <p>Salom! Men sizning ustozingizman va sizga web dasturlashni o'rgataman. Biz birgalikda qiziqarli loyihalar yaratamiz!</p>
-        </section>
+  <!-- Asosiy mazmun -->
+  <main style="padding: 20px;">
+    <!-- Men haqimda -->
+    <section id="about">
+      <h2>Men haqimda</h2>
+      <p>Salom! Men sizning ustozingizman va sizga web dasturlashni o'rgataman. Biz birgalikda qiziqarli loyihalar
+        yaratamiz!</p>
+    </section>
 
-        <!-- Dars mavzulari -->
-        <section id="lessons">
-            <h2>Dars mavzulari</h2>
-            <ul>
-                <li>1-dars: HTML asoslari</li>
-                <li>2-dars: Matn va sarlavhalar</li>
-                <li>3-dars: Ro'yxatlar</li>
-                <li>4-dars: Linklar va rasmlar</li>
-                <li>5-dars: Formalar va kiritmalar</li>
-            </ul>
-        </section>
+    <!-- Dars mavzulari -->
+    <section id="lessons">
+      <h2>Dars mavzulari</h2>
+      <ul>
+        <li>1-dars: HTML asoslari</li>
+        <li>2-dars: Matn va sarlavhalar</li>
+        <li>3-dars: Ro'yxatlar</li>
+        <li>4-dars: Linklar va rasmlar</li>
+        <li>5-dars: Formalar va kiritmalar</li>
+      </ul>
+    </section>
 
-        <!-- Tugallangan loyihalar -->
-        <section id="projects">
-            <h2>Tugallangan loyihalar</h2>
-            <p>Quyida o'quvchilarimiz tomonidan bajarilishi kerak bo'lgan loyihalar ro'yxati:</p>
-            <ol>
-                <li>Shaxsiy portfolio sahifasi</li>
-                <li>Foto galereya</li>
-                <li>Oddiy blog sahifasi</li>
-                <li>Kontakt formasi</li>
-            </ol>
-        </section>
-    </main>
+    <!-- Tugallangan loyihalar -->
+    <section id="projects">
+      <h2>Tugallangan loyihalar</h2>
+      <p>Quyida o'quvchilarimiz tomonidan bajarilishi kerak bo'lgan loyihalar ro'yxati:</p>
 
-    <!-- Footer -->
-    <footer style="text-align: center; padding: 20px; background-color: #f4f4f4;">
-        <p>Ustoz: Hojiboy Raupov</p>
-        <p>Email: raupovhojiboy@gmail.com | Telefon: +998 77 359 07 71</p>
-    </footer>
+      <div class="d-flex flex-wrap justify-content-between project-list">
+        <!-- project item -->
+        <div class="project-item bg-white text-dark">
+          <img src="https://dslab.us/wp-content/uploads/2021/03/ContactUs-560x389.jpg" class="mb-3">
+          <div class="">
+            <h4 class=""><span class="">kontakt-formasi</span></h4>
+          </div>
+          <p class="m-0">O'qituvchi nomi: <a class="" target="_blank" href="https://t.me/sinsata_channel">Sinsata</a></p>
+          <div class="">
+            <p class="m-0"><span class="">Deploys from
+                <a class="" target="_blank" href="https://kontakt-formasi.netlify.app/">Netlify</a></span></p>
+          </div>
+          <p class=""><time datetime="2025-01-07T06:28:05.101Z" class="">Published at 11:28<span class=""> (an
+                hour ago)</span></time></p>
+        </div>
+        <!-- project item -->
+        <div class="project-item bg-white text-dark">
+          <img src="https://www.searchenginejournal.com/wp-content/uploads/2020/08/7-ways-a-blog-can-help-your-business-right-now-5f3c06b9eb24e-1280x720.png" class="mb-3">
+          <div class="">
+            <h4 class=""><span class="">Muhammadali-blog</span></h4>
+          </div>
+          <p class="m-0">O'qituvchi nomi: <a class="" target="_blank" href="https://t.me/sinsata_channel">Sinsata</a></p>
+          <div class="">
+            <p class="m-0"><span class="">Deploys from
+                <a class="" target="_blank" href="https://muhammadali-blog.netlify.app/">Netlify</a></span></p>
+          </div>
+          <p class=""><time datetime="2025-01-07T06:28:05.101Z" class="">Published at 11:28<span class=""> (an
+                hour ago)</span></time></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer style="text-align: center; padding: 20px; background-color: #f4f4f4;">
+    <p>Ustoz: Hojiboy Raupov</p>
+    <p>Email: raupovhojiboy@gmail.com | Telefon: +998 77 359 07 71</p>
+  </footer>
 </body>
+
 </html>
